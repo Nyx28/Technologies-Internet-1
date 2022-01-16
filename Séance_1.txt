@@ -1,0 +1,10 @@
+1) Mon adresse IP: 192.168.0.186
+    Mon masque réseau : 255.255.255.0
+    Différentes adresses IP :
+    Google.com = 172.217.13.110
+    w3.uqo.ca = 132.213.9.106
+    www.wikipedia.org = 208.80.154.224
+
+2) 8.8.8.8:53 est un serveur DNS public de Google. UN DNS est un répertoir d'adresses IP, cela sert à transformer
+    les recherches faites dans les navigateurs comme "www.facebook.com" en adresse IP que le net va comprendre,
+      31.13.71.36 dans ce cas-ci.
