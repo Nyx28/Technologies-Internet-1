@@ -1,0 +1,7 @@
+.bold {font-weight: bold}
+.contour {border : 1px solid forestgreen}
+.Nom {font-family: "Times New Roman",serif;
+    text-decoration: underline forestgreen;}
+.main {border: 1px solid forestgreen;font-family: Arial,sans-serif; clear: both}
+.detail {font-style : italic; font-weight: bold; font-size: smaller}
+
