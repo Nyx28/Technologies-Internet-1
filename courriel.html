@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Hermes</title>
+            <link rel="stylesheet" href="courriel.css">
+            <script src="courriel.js">
+            </script>
+
+        </head>
+        <body>
+            <div class="titre"> Hermes </div>
+            <div class="recherche"> <input class="textareasearch" type="text" id="keywords" placeholder="Barre de recherche..." title="Type in a String">
+                <br>
+                <br>
+                <button class="button-34" onclick="this.parentElement.appendChild(indexer(document.getElementById('keywords').value.split(/[, ]/)));">
+                    Rechercher
+                </button></div><br>
+
+            <button class="button-34" onclick="enregistrer()">Enregistrer la page</button>
+            <nav>
+                <ul>
+                    <li> <a class="link" href="#composition">Composer un nouveau message</a> </li>
+                    <li> <a class="link" href="#visualiser">Visualiser les messages</a> </li>
+                    <li> <a class="link" href="#carnet"> Carnet d'adresse</a></li>
+                </ul>
+            </nav>
+            <div id="composition" class="categorie">
+                <h3>Composer un nouveau message </h3>
+                <br>
+                    Destinataire :
+                <p id="choix" class="border">  Aucun </p>
+                    <button class="button-34" onclick="destinataire()" >Modifier</button>
+                <br>
+                <br>
+                Message
+                <br>
+                <br>
+                <label for="message"></label><textarea id="message">Veuillez entrer votre message</textarea>
+                <br>
+                <button class="button-34" onclick="envoyerMessage()">Envoyer</button>
+            </div>
+            <div id="visualiser" class="categorie">
+                <h3>Visualiser les messages</h3>
+                Quel est le # du contact dont vous désirez voir la conversation?
+                <br>
+                <textarea class="textareasmall" id="#contact"></textarea>
+                <br>
+                <button class="button-34" onclick="afficher()">Afficher la conversation</button>
+            </div>
+            <br>
+            <div id="conversation" class="conversation"></div>
+            <div id="carnet" class="categorie">
+                <h3>Carnet d'adresse</h3>
+                <br>
+                Ajouter un contact
+                <br>
+                <br>
+                <label for='newAdresse'></label><textarea id='newAdresse'>Entrer le nom du contact</textarea>
+                <br>
+                <br>
+                <label for='newKey'></label><textarea id='newKey'>Entrer la clé publique</textarea>
+                <br>
+                <br>
+                <button class="button-34" onclick='confirmer()'>Confirmer</button>
+                <br>
+                <br>
+                <button class="button-34" onclick="tableauDeContact()">Afficher le carnet d'adresse</button>
+                <br>
+                <br>
+                <span id="adresses"></span>
+            </div>
+            <div class="effacer">
+                <h4>Effacer un contact</h4>
+                Quel est le # du contact que vous dérisez effacer?
+                <br>
+                <textarea class="textareasmall" id="#erasure"></textarea>
+                <br>
+                <button class="button-red" onclick="effacer()">Effacer le contact</button>
+            </div>
+        </body>
+    </html>
